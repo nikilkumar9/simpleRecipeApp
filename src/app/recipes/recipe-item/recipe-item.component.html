@@ -1,0 +1,10 @@
+<ion-item 
+  *ngFor="let item of recipeItem" 
+  [routerLink] = "['/recipes', item.id]"
+  > 
+    <ion-avatar slot = "start">
+      <ion-img [src]="item.imageUrl"> </ion-img>
+    </ion-avatar>
+    
+    <ion-label> {{ item.title }} </ion-label>
+</ion-item>
